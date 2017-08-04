@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vinicius.justjava.MainActivity">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Cobertura"
+            android:textAllCaps="true" />
+
+        <CheckBox
+            android:id="@+id/checkboxChantilly"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Cobertura de chantilly"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkboxChocolate"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Cobertura de chocolate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:text="Quantidade"
+            android:textAllCaps="true" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:onClick="diminuir"
+                android:text="-" />
+
+            <TextView
+                android:id="@+id/quantidade_text_view"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:onClick="aumentar"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="16dp"
+            android:text="pedido"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="16dp"
+            android:text="$0"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:onClick="submitOrder"
+            android:text="pedir" />
+
+    </LinearLayout>
+</ScrollView>
